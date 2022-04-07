@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script defer src="bundle.js"></script>
+</head>
+<body>
+    <!-- creating a post -->
+    <section id="form">
+        <form id="input-form" class="grid">
+            <p class="row1 col1 title label label-title">Title</p>
+            <input type="text" id="title" name="title" class="no-border title row1 col2" placeholder="Title" maxlength="100" required>
+            <p class="row2 col1 author label label-author">Name</p>
+            <input type="text" id="author" name="author" class="no-border author row2 col2" placeholder="Name" maxlength="50" required>
+            <textarea name="body" id="body" rows="15" cols="50" class="no-border body row3 col2" placeholder="Your story" maxlength="2000" required></textarea>
+            <input type="submit" value="PUBLISH!" id="submit-btn" class="row1 col3">
+        </form>
+    </section>
+<!-- displaying post -->
+    <section id="post" class="grid">
+        <h1 id="post-title" class="title row1 col2"></h1>
+        <p id="post-name" class="author row2 col2"></p>
+        <p id="post-body" class="body row3 col2"></p> 
+        <button class="back-btn">Go Back</button>
+    </section>
+    <section>Hello</section>
+
+</body>
+</html>

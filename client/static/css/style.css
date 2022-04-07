@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(180, 197, 233);
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#form, #post {
+    max-width: 962px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [start] 1fr [line2] 3fr [line3] 1fr [end];
+    grid-template-rows: [start] 1fr [line2] 1fr [line3] 5fr [end];
+}
+
+
+.label {
+    color: #79828B;
+    width: fit-content;
+}
+
+.row1 {
+    grid-row-start: start;
+}
+
+.row2 {
+    grid-row-start: line2;
+}
+
+.row3 {
+    grid-row-start: line3;
+}
+
+.col1 {
+    grid-column-start: start;
+    text-align: end;
+    padding-right: 7px;
+}
+
+.col2 {
+    grid-column-start: line2;
+}
+
+.col3 {
+    grid-column-start: line3;
+}
+
+.title {
+    background-color: rgb(246, 247, 253);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.author {
+    background-color: rgb(246, 247, 253);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.body {
+    background-color: rgb(246, 247, 253);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.no-border {
+    border: none;
+}
+
+.no-border:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#submit-btn {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* classes for the fade in animation */
+.fade {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.fade-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
